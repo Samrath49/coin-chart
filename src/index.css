@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Regular variant */
+@font-face {
+  font-family: 'CircularStd';
+  src: url('./fonts/CircularStd-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium variant */
+@font-face {
+  font-family: 'CircularStd';
+  src: url('./fonts/CircularStd-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Black variant */
+@font-face {
+  font-family: 'CircularStd';
+  src: url('./fonts/CircularStd-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body{font-family: 'CircularStd';}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.neumorphic {
+  background-color: #e6e7ee;
+  box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff!important;
+}
+
+.neumorphic-inner {
+  background-color: #e6e7ee;
+  box-shadow: inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff!important;
+}
